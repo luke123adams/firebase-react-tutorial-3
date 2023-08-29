@@ -8,7 +8,7 @@ const Signup = () => {
     const [confirmPassword, setConfirmPassword] = useState('')
     const [error, setError] = useState('')
 
-    const createUser = UserAuth()
+    const { createUser } = UserAuth()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
